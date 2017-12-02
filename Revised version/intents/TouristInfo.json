@@ -1,0 +1,80 @@
+{
+  "id": "ac5130c0-2c0c-49ef-8ee7-2a63f7e7502f",
+  "name": "TouristInfo",
+  "auto": true,
+  "contexts": [
+    "TouristMenu"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "add-tourist-info",
+      "affectedContexts": [
+        {
+          "name": "TouristMenu",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "TouristInfo",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "d018e683-a277-4886-baea-8e35f072da35",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "tourist-name",
+          "value": "$tourist-name",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What\u0027s your name?"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "a15ebd46-725a-4e0f-846f-664e7cb77558",
+          "required": true,
+          "dataType": "@sys.phone-number",
+          "name": "tourist-mobile-no",
+          "value": "$tourist-mobile-no",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Which phone number the guide contact you?"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 2,
+          "platform": "telegram",
+          "lang": "en",
+          "title": "What do you want to do?",
+          "replies": [
+            "Search"
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1512254636,
+  "fallbackIntent": false,
+  "events": []
+}

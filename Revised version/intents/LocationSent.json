@@ -1,0 +1,77 @@
+{
+  "id": "6352fbd6-828b-4176-9fe5-b24b59119869",
+  "name": "LocationSent",
+  "auto": true,
+  "contexts": [
+    "TouristMenu",
+    "TouristInfo",
+    "GuideMenu",
+    "GuideInfo"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "send-location",
+      "affectedContexts": [
+        {
+          "name": "TouristMenu",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "TouristInfo",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "Location",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "GuideMenu",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "GuideInfo",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 2,
+          "platform": "telegram",
+          "lang": "en",
+          "title": "Choose your Location",
+          "replies": [
+            "Jaipur",
+            "Udaipur",
+            "Ajmer",
+            "Chittor",
+            "Jodhpur",
+            "Bikaner",
+            "Bhilwara",
+            "Alwar",
+            "Mount Abu"
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1512256382,
+  "fallbackIntent": false,
+  "events": []
+}

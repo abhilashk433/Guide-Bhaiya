@@ -1,0 +1,25 @@
+[
+  {
+    "id": "27b56952-c438-47be-8a67-4450976555d3",
+    "data": [
+      {
+        "text": "Look",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "be938dea-8fcf-4ec6-9bcd-93fe08236754",
+    "data": [
+      {
+        "text": "Search",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1512256382
+  }
+]

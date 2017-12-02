@@ -1,0 +1,61 @@
+{
+  "id": "47f19dfa-4e28-4711-8044-d32d6420ea65",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [
+        {
+          "name": "TouristMenu",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "GuideMenu",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 2,
+          "platform": "telegram",
+          "lang": "en",
+          "title": "You\u0027re a 👇 👇",
+          "replies": [
+            "Guide",
+            "Tourist",
+            "FAQ"
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": [
+            "Hi! This is GuideBhaiya 👱",
+            "Hello! GuideBhaiya Here 👱",
+            "Good day!  From Guide Bhaiya 👱",
+            "Greetings! Guide Bhaiya 👱 at your service"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ]
+}

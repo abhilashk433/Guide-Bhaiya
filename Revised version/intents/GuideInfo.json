@@ -1,0 +1,80 @@
+{
+  "id": "217758f7-4cca-40c7-8fa9-4a0ffd9bc681",
+  "name": "GuideInfo",
+  "auto": true,
+  "contexts": [
+    "GuideMenu"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "add-guide-info",
+      "affectedContexts": [
+        {
+          "name": "GuideMenu",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "GuideInfo",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "d4f9fb1f-b7a4-477e-8b6c-1a58acfd5064",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "guide-name",
+          "value": "$guide-name",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What is your name?"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "44371980-5eb8-48d9-a7b5-ceceb41b39ba",
+          "required": true,
+          "dataType": "@sys.phone-number",
+          "name": "guide-mobile-no",
+          "value": "$guide-mobile-no",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Your Mobile Number"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 2,
+          "platform": "telegram",
+          "lang": "en",
+          "title": "What do you want to do?",
+          "replies": [
+            "Search"
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1512254140,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "10d68e40-5d67-44d6-a3ce-647ffbc415ce",
+  "name": "Jaipur",
+  "auto": true,
+  "contexts": [
+    "GuideInfo",
+    "TouristInfo",
+    "Location"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "choose-place",
+      "affectedContexts": [
+        {
+          "name": "GuideInfo",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "GuideMenu",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "TouristMenu",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "TouristInfo",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "Location",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "09be2562-d0f1-4992-ac17-bb8d3c1f12c9",
+          "dataType": "@sys.any",
+          "name": "guide-name",
+          "value": "#GuideInfo.guide-name"
+        },
+        {
+          "id": "5a1d4e9f-7a15-4587-982b-990992e3799c",
+          "dataType": "@sys.phone-number",
+          "name": "guide-mobile-no",
+          "value": "#GuideInfo.guide-mobile-no"
+        },
+        {
+          "id": "ecb47687-c56a-4b5f-a130-32cc215cd3f0",
+          "dataType": "@sys.phone-number",
+          "name": "tourist-mobile-no",
+          "value": "#TouristInfo.tourist-mobile-no"
+        },
+        {
+          "id": "c87afbcf-0574-4885-bdbb-edd8b5468438",
+          "dataType": "@sys.any",
+          "name": "tourist-name",
+          "value": "#TouristInfo.tourist-name"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "At Jaipur, Guide Found: $guide-name @ $guide-mobile-no and Tourist Found: $tourist-name @ $tourist-mobile-no ."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1512256555,
+  "fallbackIntent": false,
+  "events": []
+}

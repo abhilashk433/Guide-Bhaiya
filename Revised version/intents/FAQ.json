@@ -1,0 +1,29 @@
+{
+  "id": "0c1fbabf-99ff-4b91-aab4-ce4c5890cfc7",
+  "name": "FAQ",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "print-faq",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Created for Rajasthan Hackathon 3.0 by Abhilash, Akshay, Alok and Debosmit."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1512258438,
+  "fallbackIntent": false,
+  "events": []
+}
