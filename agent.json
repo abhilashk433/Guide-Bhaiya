@@ -1,0 +1,34 @@
+{
+  "description": "This agent tracks local tourist guides and brings them handy to the tourists.",
+  "language": "en",
+  "shortDescription": "Search maps for a location",
+  "examples": "User: Where is Iceland?\nUser: Find Istanbul on the map.\nUser: Show me Philadelphia.\nUser: Where am I now?\nUser: Map of Paris, France.\nUser: I want to see the map of India.",
+  "activeAssistantAgents": [],
+  "disableInteractionLogs": false,
+  "googleAssistant": {
+    "googleAssistantCompatible": false,
+    "welcomeIntentSignInRequired": false,
+    "startIntents": [],
+    "systemIntents": [],
+    "endIntentIds": [],
+    "oAuthLinking": {
+      "required": false,
+      "grantType": "AUTH_CODE_GRANT"
+    },
+    "voiceType": "MALE_1",
+    "capabilities": [],
+    "protocolVersion": "V1"
+  },
+  "defaultTimezone": "Asia/Colombo",
+  "webhook": {
+    "available": false,
+    "useForDomains": false,
+    "cloudFunctionsEnabled": false,
+    "cloudFunctionsInitialized": false
+  },
+  "isPrivate": false,
+  "customClassifierMode": "use.instead",
+  "mlMinConfidence": 0.3,
+  "supportedLanguages": [],
+  "enableOnePlatformApi": false
+}

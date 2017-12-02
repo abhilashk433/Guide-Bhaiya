@@ -1,0 +1,36 @@
+{
+  "id": "38107604-5099-48b9-8798-800e5aa5ac99",
+  "name": "ChooseType",
+  "auto": true,
+  "contexts": [
+    "Choose"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "Choose",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1512204260,
+  "fallbackIntent": false,
+  "events": []
+}

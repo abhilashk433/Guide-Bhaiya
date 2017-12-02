@@ -1,0 +1,76 @@
+{
+  "id": "5007c380-f5e6-45f5-932f-640459a7b524",
+  "name": "Hi",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "Choose",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "5c3d091b-2e50-4746-bc63-60e4bde91a8a",
+          "required": true,
+          "dataType": "@welcome",
+          "name": "welcome",
+          "value": "$welcome",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Say Hi"
+            },
+            {
+              "lang": "en",
+              "value": "Say Hello"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 3,
+          "platform": "telegram",
+          "lang": "en",
+          "imageUrl": "https://drive.google.com/open?id\u003d1UQTzOsmCsQdyBzqUcBjnZTUO25YBQ-rA"
+        },
+        {
+          "type": 2,
+          "platform": "telegram",
+          "lang": "en",
+          "title": "You\u0027re a 👇",
+          "replies": [
+            "Tourist",
+            "Guide"
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": [
+            "Hi...Guide Bhaiya at your Service!",
+            "Guide Bhaiya ready to assist you!",
+            "Here\u0027s Guide Bhaiya for you."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "facebook": true,
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1512201937,
+  "fallbackIntent": false,
+  "events": []
+}
